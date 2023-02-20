@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+  integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Time tracking dashboard</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+</head>
+
+<body>
+  <!-- =========projet2========== -->
+
+  <section class="time-tarcking">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3 my-sm-3">
+          <div class="profi_cart">
+            <div class="global d-flex d-lg-block">
+              <img src="./images/image-jeremy.png" alt="" class="img-jerm">
+              <div class="golob_inf">
+                <p class="text_rapor">Raport for</p>
+                <h3 class="pers_name">Ibrahima</h3>
+                <h3 class="pers_name">Timera</h3>
+              </div>
+            </div>
+          </div>
+
+          <div class="donne-cart">
+            <ul class="nav justify-content-evenly flex-lg-column">
+              <li class="nav-item">
+                <a class="nav-link active" href="#" id="daily">Daily</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" id="Weekly">Weekly</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" id="monthly">Monthly</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- ====patie work== -->
+        <div class="col-lg-9">
+          <div class="row">
+            <div class="col-lg-4 mt-3">
+              <div class="carte-tâche">
+                <div class="work_img d-flex flex-row-reverse">
+                  <img src="./images/icon-work.svg" alt="">
+                </div>
+                <div class="tâche-inf">
+                  <div class="row">
+                    <div class="col-6 text-white">
+                      work
+                    </div>
+                    <div class="col-6 text-end">
+                      <img src="./images/icon-ellipsis.svg" alt="">
+                    </div>
+                    <div class="col-12">
+                      <h1 class="text-white work_actuel" id="work_actuel">32hrs</h1>
+                    </div>
+                    <div class="last text-secondary">
+                      last-week - <span class="text-end">36hrs</span> 
+                    </div>
+                    <div class="col-12 d-flex flex-column-reverse">
+                      <p class="tach-hist text-white"><span id="work_precedent"></span></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- ====patie play== -->
+            <div class="col-lg-4 mt-3">
+              <div class="carte-tâche">
+                <div class="play_img d-flex flex-row-reverse back-play">
+                  <img src="./images/icon-play.svg" alt="" class="playt-img">
+                </div>
+                <div class="tâche-inf">
+                  <div class="row">
+                    <div class="col-6 text-white">
+                      play
+                    </div>
+                    <div class="col-6 text-end">
+                      <img src="./images/icon-ellipsis.svg" alt="">
+                    </div>
+                    <div class="col-12">
+                      <h1 class="text-white play_actuel" id="play_actuel">10hrs</h1>
+                    </div>
+                    <div class="last text-secondary">
+                      last-week - <span class="text-end">8hrs</span> 
+                    </div>
+                    <div class="col-12 d-flex flex-column-reverse">
+                      <p class="tach-hist text-white"><span id="play_precedent"></span></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- ====patie study== -->
+            <div class="col-lg-4 mt-3">
+              <div class="carte-tâche">
+                <div class="study_img d-flex flex-row-reverse back-study">
+                  <img src="./images/icon-study.svg" alt="" class="studyt-img">
+                </div>
+                <div class="tâche-inf">
+                  <div class="row">
+                    <div class="col-6 text-white">
+                      study
+                    </div>
+                    <div class="col-6 text-end">
+                      <img src="./images/icon-ellipsis.svg" alt="">
+                    </div>
+                    <div class="col-12">
+                      <h1 class="text-white study_actuel" id="study_actuel">4hrs</h1>
+                    </div>
+                    <div class="last text-secondary">
+                      last-week - <span class="text-end">7hrs</span> 
+                    </div>
+                    <div class="col-12 d-flex flex-column-reverse">
+                      <p class="tach-hist text-white"><span id="study_precedent"></span></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- ====patie exercise== -->
+            <div class="col-lg-4">
+              <div class="carte-tâche">
+                <div class="exercise_img d-flex flex-row-reverse back-exercise">
+                  <img src="./images/icon-exercise.svg" alt="" class="exercist-img">
+                </div>
+                <div class="tâche-inf">
+                  <div class="row">
+                    <div class="col-6 text-white">
+                      exercise
+                    </div>
+                    <div class="col-6 text-end">
+                      <img src="./images/icon-ellipsis.svg" alt="">
+                    </div>
+                    <div class="col-12">
+                      <h1 class="text-white exercise_actuel" id="exercise_actuel">4hrs</h1>
+                    </div>
+                    <div class="last text-secondary">
+                      last-week - <span class="text-end">5hrs</span> 
+                    </div>
+                    <div class="col-12 d-flex flex-column-reverse">
+                      <p class="tach-hist text-white"><span id="exercise_precedent"></span></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+             <!-- ====patie social== -->
+            <div class="col-lg-4">
+              <div class="carte-tâche">
+                <div class="social_img d-flex flex-row-reverse back-social">
+                  <img src="./images/icon-social.svg" alt="" class="social-img">
+                </div>
+                <div class="tâche-inf">
+                  <div class="row">
+                    <div class="col-6 text-white">
+                      social
+                    </div>
+                    <div class="col-6 text-end">
+                      <img src="./images/icon-ellipsis.svg" alt="">
+                    </div>
+                    <div class="col-12">
+                      <h1 class="text-white social_actuel" id="social_actuel">5hrs</h1>
+                    </div>
+                    <div class="last text-secondary">
+                      last-week - <span class="text-end">10hrs</span> 
+                    </div>
+                    <div class="col-12 d-flex flex-column-reverse">
+                      <p class="tach-hist text-white"><span id="social_precedent"></span></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+             <!-- ====patie self== -->
+            <div class="col-lg-4">
+              <div class="carte-tâche">
+                <div class="self_img d-flex flex-row-reverse back-self">
+                  <img src="./images/icon-self-care.svg" alt="" class="selft-img">
+                </div>
+                <div class="tâche-inf">
+                  <div class="row">
+                    <div class="col-6 text-white">
+                      self
+                    </div>
+                    <div class="col-6 text-end">
+                      <img src="./images/icon-ellipsis.svg" alt="">
+                    </div>
+                    <div class="col-12">
+                      <h1 class="text-white self_actuel" id="self_actuel">2hrs</h1>
+                    </div>
+                    <div class="last text-secondary">
+                      last-week - <span class="text-end">2hrs</span> 
+                    </div>
+                    <div class="col-12 d-flex flex-column-reverse">
+                      <p class="tach-hist text-white"><span id="self_precedent"></span></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+
+  <script src="app.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+</body>
+</html>

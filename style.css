@@ -1,0 +1,134 @@
+body {
+    background-color: hsl(226, 43%, 10%);
+}
+/* p {
+    margin-bottom: 0;
+} */
+
+    /* projet2 css */
+.global .img-jerm{
+    width: 70px;
+    height: 70px;
+}
+
+.time-tarcking{
+    margin-top: 50px;
+}
+
+.global{
+    padding: 30px;
+    background-color: hsl(246, 80%, 60%);
+    border-radius: 10px;
+    z-index: 2;
+}
+
+.back-play{
+    background-color: hsl(195, 74%, 62%);
+    border-radius: 11px;
+}
+/* 
+.carte-tâche .back-play:hover{
+    transform: scale(1.15);
+} */
+
+.back-study{
+    background-color: hsl(348, 100%, 68%);
+    border-radius: 11px;
+    
+}
+
+.back-exercise{
+    background-color: hsl(145, 58%, 55%);
+    border-radius: 11px;
+}
+
+.back-social{
+    background-color: hsl(264, 64%, 52%);
+    border-radius: 11px;
+}
+
+.back-self{
+    background-color: hsl(43, 84%, 65%);
+    border-radius: 11px;
+}
+
+.golob_inf{
+    margin-left: 15px;
+}
+
+.golob_inf .text_rapor{
+    margin-bottom: 0;
+    color: #86919b;
+}
+
+.golob_inf .pers_name{
+    color: whitesmoke;
+}
+
+.donne-cart{
+    background-color: #1c1f4a;
+    border-radius: 15px;
+    position: relative;
+}
+
+.work_img{
+    background-color: hsl(15, 100%, 70%);
+    border-radius: 11px;
+}
+
+.work_img img{
+    width: 79px;
+    height: 79px;
+}
+
+.tâche-inf{
+    background-color: hsl(235, 46%, 20%);
+    padding: 20px;
+    border-radius: 10px;
+    position: relative;
+    top: -35px;
+}
+
+.work_img .workkt-img{
+    width: 17%;
+}
+
+.playt-img{
+    width: 29%;
+}
+
+.studyt-img{
+    width: 29%;
+}
+
+.exercist-img{
+    width: 40%;
+}
+
+.social-img{
+    width: 21%;
+}
+
+.selft-img{
+    width: 28%;
+}
+
+.nav-link:hover, .nav-link:focus{
+    color: white ; 
+    cursor: pointer ;
+}
+a:-webkit-any-link:active {
+    color: white;
+}
+
+@media (min-width: 1200px) {
+    .global {
+      position: relative;
+    }
+    .golob_inf {
+      margin-top: 20px;
+    }
+    .donne-cart {
+      padding: 20px; 
+    }
+    }
